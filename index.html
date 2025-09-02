@@ -1,52 +1,82 @@
 
-    <html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
-    <style>
-      body{margin:0;background:#071627;color:#f0ebe1;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;}
-      .wrap{max-width:1100px;margin:0 auto;padding:40px 24px;}
-      header{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;color:#cfa841;border-bottom:1px solid rgba(207,168,65,.25);}
-      nav a{color:#cfa841;text-decoration:none;margin-left:24px}
-      h1{color:#cfa841;font-weight:700;letter-spacing:.5px}
-      h2{color:#cfa841}
-      p{line-height:1.6;font-size:18px;color:#f0ebe1}
-      .btn{display:inline-block;background:#cfa841;color:#071627;padding:14px 22px;border-radius:12px;text-decoration:none;font-weight:700}
-      .card{border:2px solid rgba(207,168,65,.9);border-radius:18px;padding:18px}
-      footer{color:rgba(207,168,65,.85);text-align:center;padding:30px}
-      .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-      @media(max-width:900px){.grid3{grid-template-columns:1fr} header{flex-wrap:wrap}}
-    </style>
-    </head>
-    <body>
-      <header><div>CHESSLINE MEDICAL</div><nav>
-        <a href='discover.html'>Discover</a>
-        <a href='member.html'>Become a Member</a>
-        <a href='invest.html'>Invest</a>
-        <a href='contact.html'>Contact</a>
-      </nav></header>
-      <div class='wrap'>
-        <div style='display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px'>
-          <section>
-            <h1>CHESSLINE MEDICAL</h1>
-            <h2>The Future of Medicine</h2>
-            <p>Learn how Chessline Medical is revolutionizing healthcare through cutting‑edge telemedicine and advanced AI diagnostics.</p>
-            <a class='btn' href='discover.html'>Discover More</a>
-          </section>
-          <section class='card'>
-            <h2 style='text-align:center'>I want to use Chessline Medical as a patient</h2>
-            <div class='grid3'>
-              <div class='card'><h3>Silver</h3><p>€39 / month</p><p>60 min / month</p><p>Mon–Fri 8–18h</p></div>
-              <div class='card'><h3>Gold</h3><p>€89 / month</p><p>120 min / month</p><p>Mon–Sat 6–20h</p></div>
-              <div class='card'><h3>Platinum</h3><p>€129 / month</p><p>160 min / month</p><p>Mon–Sun 6–22h</p></div>
-            </div>
-            <div style='text-align:center;margin-top:18px'><a class='btn' href='member.html'>Become a Member</a></div>
-          </section>
-          <section>
-            <h1>CHESSLINE MEDICAL INVEST</h1>
-            <p style='font-size:22px'>Tokens available from only €10</p>
-            <p style='font-size:22px'>Larger investments from €50,000 upon prior arrangement</p>
-            <a class='btn' href='invest.html'>Get Started</a>
-          </section>
-        </div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chessline Medical</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="description" content="Chessline Medical – Telemedicine, MemberCards and Token Invest.">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <a href="#top" class="left"><img alt="Chessline Medical" src="assets/img/logo_header.png"></a>
+      <nav class="right">
+        <a href="#benefits">Benefits</a>
+        <a href="#member">Member</a>
+        <a href="#invest">Invest</a>
+        <a class="btn outline" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero container">
+      <img alt="Chessline Medical Crest" src="assets/img/logo_hero.png">
+      <h1>YOUR HEALTH. YOUR DECISION.</h1>
+      <p class="lead">Telemedicine with CHESSLINE – fast, personal, secure.</p>
+      <p>
+        <a class="btn" href="#member">Become a Member</a>
+        &nbsp;
+        <a class="btn outline" href="#invest">Get Started (Invest)</a>
+      </p>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="container">
+      <h2>Telemedicine – Your Benefits at a Glance</h2>
+      <div class="card">
+        <img alt="Benefits" src="assets/img/benefits.jpg">
       </div>
-      <footer>0800 100 1235 • info@chessline.one • www.chessline.one</footer>
-    </body></html>
-    
+    </section>
+
+    <!-- Member -->
+    <section id="member" class="container">
+      <h2>Choose Your CHESSLINE MemberCard</h2>
+      <div class="card">
+        <img alt="MemberCards" src="assets/img/member.jpg">
+      </div>
+      <p style="text-align:center;margin-top:12px">
+        <a class="btn" href="#contact">Choose Your Card</a>
+      </p>
+    </section>
+
+    <!-- Invest -->
+    <section id="invest" class="container">
+      <h2>Your Key to Medical Freedom</h2>
+      <div class="card">
+        <img alt="Invest" src="assets/img/key.jpg">
+      </div>
+      <p style="text-align:center;margin-top:12px">
+        <a class="btn" href="#contact">Get Started</a>
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container">
+      <h2>Contact</h2>
+      <p><strong>Phone:</strong> 0800 100 1235<br>
+         <strong>E‑Mail:</strong> <a href="mailto:info@chessline.one">info@chessline.one</a><br>
+         <strong>Website:</strong> <a href="https://www.chessline.one">www.chessline.one</a></p>
+      <p><a class="btn" href="mailto:info@chessline.one?subject=Contact%20from%20Website">Send Message</a></p>
+    </section>
+  </main>
+
+  <footer>
+    0800 100 1235 &nbsp;•&nbsp; info@chessline.one &nbsp;•&nbsp; www.chessline.one
+  </footer>
+</body>
+</html>
