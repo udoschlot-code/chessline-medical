@@ -1,124 +1,52 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CHESSLINE MEDICAL</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background-color: #0d1b2a;
-      color: gold;
-    }
-    header {
-      text-align: center;
-      padding: 40px 20px 20px;
-    }
-    header img {
-      width: 100px;
-    }
-    header h1 {
-      margin: 20px 0 10px;
-      font-size: 32px;
-      font-weight: bold;
-    }
-    header p {
-      font-size: 16px;
-      color: #f4f4f4;
-    }
-    nav {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
-    nav select {
-      padding: 5px;
-      background: #14213d;
-      color: gold;
-      border: 1px solid gold;
-    }
-    .container {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 40px 20px;
-      flex-wrap: wrap;
-    }
-    .block {
-      flex: 1 1 280px;
-      background-color: #14213d;
-      padding: 20px;
-      border-radius: 8px;
-      text-align: center;
-    }
-    .block h2 {
-      color: gold;
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-    .block p {
-      font-size: 14px;
-      color: #ddd;
-      margin-bottom: 20px;
-    }
-    .cta-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: gold;
-      color: #0d1b2a;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      font-size: 12px;
-      padding: 20px;
-      color: #888;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHESSLINE MEDICAL</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav>
-    <select>
-      <option value="en">EN</option>
-      <option value="de">DE</option>
-      <option value="at">AT</option>
-      <option value="ch">CH</option>
-    </select>
-  </nav>
+    <header>
+        <img src="logo.png" alt="CHESSLINE MEDICAL Logo" class="logo" />
+        <h1>CHESSLINE MEDICAL</h1>
+        <p>The Institute of Private Health Excellence</p>
+    </header>
 
-  <header>
-    <img src="logo.png" alt="Chessline Medical Logo" />
-    <h1>CHESSLINE MEDICAL</h1>
-    <p>The Institute of Private Health Excellence</p>
-  </header>
+    <main>
+        <section class="blocks">
+            <div class="block">
+                <h2>CHESSLINE MEDICAL</h2>
+                <p>The future of medicine. AI. Experts. Precision. Accessible from anywhere.</p>
+                <button onclick="showInfo('info1')">Discover</button>
+                <p id="info1" class="hidden">CHESSLINE MEDICAL is redefining healthcare through cutting-edge diagnostics, telemedicine, and personalized therapy from anywhere in the world.</p>
+            </div>
+            <div class="block">
+                <h2>JOIN AS PATIENT</h2>
+                <p>Silver €39 – 60min<br>Gold €89 – 120min<br>Platinum €129 – 180min incl. Sunday by appointment</p>
+                <button onclick="showInfo('info2')">Join Now</button>
+                <p id="info2" class="hidden">Choose your membership: Silver, Gold or Platinum. Book digital consultations with leading physicians based on your needs.</p>
+            </div>
+            <div class="block">
+                <h2>INVEST NOW</h2>
+                <p>Tokens from €10<br>Major investments from €50,000<br>Direct contact with Prof. Dr. Udo Schlot</p>
+                <button onclick="showInfo('info3')">Start</button>
+                <p id="info3" class="hidden">Become part of the medical revolution. Invest securely and meaningfully in CHESSLINE MEDICAL with token-based access for all.</p>
+            </div>
+        </section>
+    </main>
 
-  <section class="container">
-    <div class="block">
-      <h2>CHESSLINE MEDICAL</h2>
-      <p>The future of medicine.<br>AI. Experts. Precision.<br>Accessible from anywhere.</p>
-      <a class="cta-button" href="mailto:info@chessline.one">Discover</a>
-    </div>
+    <footer>
+        <p>Contact us: <a href="mailto:info@chessline.one">info@chessline.one</a></p>
+        <p>www.chessline.one · 0800 100 1235</p>
+    </footer>
 
-    <div class="block">
-      <h2>JOIN AS PATIENT</h2>
-      <p>Silver €39 – 60min<br>Gold €89 – 120min<br>Platinum €129 – 180min<br>Daily access options available.</p>
-      <a class="cta-button" href="mailto:info@chessline.one">Join Now</a>
-    </div>
-
-    <div class="block">
-      <h2>INVEST NOW</h2>
-      <p>Tokens from €10.<br>Major investments from €50,000.<br>Direct contact with Prof. Dr. Schlot.</p>
-      <a class="cta-button" href="mailto:info@chessline.one">Start</a>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 CHESSLINE MEDICAL · info@chessline.one · www.chessline.one · 0800 100 1235
-  </footer>
+    <script>
+        function showInfo(id) {
+            document.querySelectorAll('.hidden').forEach(p => p.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
