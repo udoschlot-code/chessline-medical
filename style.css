@@ -9,18 +9,30 @@ header {
   text-align: center;
   padding: 40px 20px 20px;
 }
-.logo {
+header img {
   width: 100px;
 }
-h1 {
-  font-size: 32px;
+header h1 {
   margin: 20px 0 10px;
+  font-size: 32px;
+  font-weight: bold;
 }
-p {
+header p {
   font-size: 16px;
   color: #f4f4f4;
 }
-.content {
+nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+nav select {
+  padding: 5px;
+  background: #14213d;
+  color: gold;
+  border: 1px solid gold;
+}
+.container {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -28,25 +40,30 @@ p {
   flex-wrap: wrap;
 }
 .block {
+  flex: 1 1 280px;
   background-color: #14213d;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
-  width: 300px;
 }
 .block h2 {
   color: gold;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 .block p {
+  font-size: 14px;
   color: #ddd;
+  margin-bottom: 20px;
 }
 .cta-button {
   display: inline-block;
   padding: 10px 20px;
   background-color: gold;
   color: #0d1b2a;
-  text-decoration: none;
+  border: none;
   border-radius: 5px;
+  text-decoration: none;
   font-weight: bold;
 }
 footer {
