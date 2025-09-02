@@ -1,0 +1,57 @@
+
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #0d1b2a;
+  color: gold;
+}
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+.logo {
+  width: 100px;
+}
+h1 {
+  font-size: 32px;
+  margin: 20px 0 10px;
+}
+p {
+  font-size: 16px;
+  color: #f4f4f4;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+.block {
+  background-color: #14213d;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+}
+.block h2 {
+  color: gold;
+}
+.block p {
+  color: #ddd;
+}
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: gold;
+  color: #0d1b2a;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 20px;
+  color: #888;
+}
